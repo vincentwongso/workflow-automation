@@ -1,0 +1,15 @@
+name: Hello Action
+
+on: [pull_request]
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World
+        run: echo "Hello Pepperstone"
+      - name: multiline
+        run: |
+          node -v
+          npm -v
+          php -v
